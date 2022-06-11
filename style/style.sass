@@ -1,0 +1,68 @@
+//@import "reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body
+    font-family: 'Lato', sans-serif
+    display: grid
+    grid-template-areas: "header header header" "aside main main" "footer footer footer"
+    h1,h2,h3,h4,h5,h6
+        color: #F5F5F5
+        text-transform: uppercase
+        font-size: 35px
+        text-align: center
+
+
+.banner
+    width: 400px
+    height: 100px
+    border-top-right-radius: 3.5em 50%
+    border-bottom-right-radius: 3.5em 50%
+    background-color: #363844
+
+
+
+//------------------------------HEADER------------------------------
+.header
+    grid-area: header
+    color: #cfbb90
+    display: grid
+    grid-template-columns: 30% 70%
+    width: 100%   
+    background-color: #363844
+    .hearder__img
+        border-radius: 50% 
+        margin: 30px 10px 30px 50px
+        align-self: center
+        justify-self: center
+        width: 18vw
+    .header__conteiner
+        border: 3px solid 
+        align-self: center
+        justify-self: center
+        text-transform: uppercase
+        .header__title
+            font-size: calc(24px + 60 * (100vw / 1500))
+            margin: 0
+        .header__suptitle
+            color: #F5F5F5
+            padding: 0px 16px 0px 16px
+            margin: 0 auto
+
+//------------------------------ASIDE--------------------------------
+.aside
+    grid-area: aside
+    background-color: #eae1cd 
+
+
+
+
+
+//-------------------------------MAIN---------------------------------
+.main
+    grid-area: main
+    background-color: #F5F5F5
+
+
+//--------------------------------FOOTER------------------------------
+.footer
+    grid-area: footer
