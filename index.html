@@ -42,33 +42,27 @@
         </section>
     </aside>
     <main class="main">
-        <section class="main__aboutme">
+        <section class="main__aboutMe">
             <div class="banner"><h3>about me</h3></div>
-            <p>I am 25 years old, I ran my own sewing business. I became interested in programming, and began to study. All areas are interesting, but for a start I chose front-end development.</p>
+            <p class="main__aboutMe_text">My name is Pasha, I am 25 years old. Programming interested me from school, unfortunately the training was not long as the teachers changed. I recently returned to programming and chose the front-end for myself.
+                I also enjoy sewing and sports. I sew bags, purses and backpacks.</p>
         </section>
         <section class="main__codeExamples">
         <div class="banner"><h4>Code Examples</h4></div>
-            <pre><code>
-        .second_page 
+        <pre class="main__codeExamples_pre"><code>
+        .banner
         display: grid
-        justify-content: center
-            .conteiner_second_page 
-            display: grid
-            text-align: center
-            .second_benefits 
-            width: 100%
-            display: flex
-            justify-content: space-between
-            margin-bottom: 14.3vh
-            margin-top: 8.8vh
-                .second_benefits_case p 
-                width: 12vwx
-                margin-top: 2.35vh
+        align-content: center
+        width: 520px
+        height: 70px
+        border-top-right-radius: 2.5em 50%
+        border-bottom-right-radius: 2.5em 50%
+        background-color: #363844
             </code></pre>
         </section>
         <section class="main__education">
         <div class="banner"><h5>Education</h5></div>
-            <ul>
+            <ul class="main__education_list">
                 <li>Vitebsk State Technical College</li>
                     <ul>
                         <li>Technician - technologist of woodworking machines</li>
@@ -76,6 +70,10 @@
             </ul>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <a href="https://github.com/pasha01996"><img class="footer__git" src="images/github-lite.png" alt="github"></a>
+        <p class="footer__p">Made in 2022 on course</p>
+        <a href="https://rs.school/js/"><img class="footer__rsschool" src="images/rs_school_js.svg" alt=""></a>
+    </footer>
 </body>
 </html>

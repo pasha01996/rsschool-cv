@@ -1,4 +1,3 @@
-//@import "reset.scss";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body
@@ -13,17 +12,14 @@ body
         font-size: 35px
         text-align: center
 
-
-.banner
+.banner 
     display: grid
     align-content: center
-    width: 520px
+    width: 400px
     height: 70px
     border-top-right-radius: 2.5em 50%
     border-bottom-right-radius: 2.5em 50%
     background-color: #363844
-
-
 
 //------------------------------HEADER------------------------------
 .header
@@ -54,11 +50,11 @@ body
 
 //------------------------------ASIDE--------------------------------
 .aside
-    padding-top: 100px
+    padding-top: 30px
     grid-area: aside
     background-color: #eae1cd 
     .aside__contact_links
-        margin-top: 40px
+        margin-top: 30px
         list-style-type: none
         .contact_line
             display: flex
@@ -68,6 +64,8 @@ body
             margin-left: 30px
             text-decoration: none
             color: #363844
+        .contact_link:hover
+            color: #F5F5F5
         .email_img
             width: 50px
             height: auto
@@ -78,20 +76,42 @@ body
             justify-self: center
             text-transform: uppercase
             font-weight: 800
-            margin-top: 45px
+            margin-top: 30px
         .aside__skills_list, .aside__languages_list
             font-weight: 600
             line-height: 30px
-            margin-top: 30px
+            margin-top: 20px
             padding-left: 70px
 
 //-------------------------------MAIN---------------------------------
 .main
     grid-area: main
     background-color: #F5F5F5
-    .main__aboutme
+    .main__aboutMe
         margin-top: 30px
+        .main__aboutMe_text
+            padding-left: 85px
+            padding-bottom: 30px
+            width: 60vw
+    .main__codeExamples_pre
+        margin: 0
+        padding-bottom: 20px
+    .main__education_list
+        padding-left: 110px
+        padding-bottom: 10px
 
 //--------------------------------FOOTER------------------------------
 .footer
+    background-color: #363844
+    height: 20vh
     grid-area: footer
+    display: flex
+    justify-content: center
+    align-items: center
+    .footer__rsschool
+        background-color: #F5F5F5
+        width: 200px
+        height: auto
+    .footer__p
+        margin: 0 30px
+        color: #F5F5F5
