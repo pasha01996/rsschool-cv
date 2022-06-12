@@ -3,8 +3,10 @@
 
 body
     font-family: 'Lato', sans-serif
+    font-size: 20px
     display: grid
     grid-template-areas: "header header header" "aside main main" "footer footer footer"
+    grid-template-columns: 30% 70%
     h1,h2,h3,h4,h5,h6
         color: #F5F5F5
         text-transform: uppercase
@@ -13,10 +15,12 @@ body
 
 
 .banner
-    width: 400px
-    height: 100px
-    border-top-right-radius: 3.5em 50%
-    border-bottom-right-radius: 3.5em 50%
+    display: grid
+    align-content: center
+    width: 520px
+    height: 70px
+    border-top-right-radius: 2.5em 50%
+    border-bottom-right-radius: 2.5em 50%
     background-color: #363844
 
 
@@ -50,18 +54,43 @@ body
 
 //------------------------------ASIDE--------------------------------
 .aside
+    padding-top: 100px
     grid-area: aside
     background-color: #eae1cd 
-
-
-
-
+    .aside__contact_links
+        margin-top: 40px
+        list-style-type: none
+        .contact_line
+            display: flex
+            align-items: center
+        .contact_link
+            font-weight: 600
+            margin-left: 30px
+            text-decoration: none
+            color: #363844
+        .email_img
+            width: 50px
+            height: auto
+            padding: 10px
+    .aside__skills, .aside__languages
+        display: grid
+        .aside__skills_title, .aside__languages_title
+            justify-self: center
+            text-transform: uppercase
+            font-weight: 800
+            margin-top: 45px
+        .aside__skills_list, .aside__languages_list
+            font-weight: 600
+            line-height: 30px
+            margin-top: 30px
+            padding-left: 70px
 
 //-------------------------------MAIN---------------------------------
 .main
     grid-area: main
     background-color: #F5F5F5
-
+    .main__aboutme
+        margin-top: 30px
 
 //--------------------------------FOOTER------------------------------
 .footer
